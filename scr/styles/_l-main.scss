@@ -1,16 +1,49 @@
-main {
-    background-image: url(img/bg-header-mobile.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.Main {
+    display: flex;
+    background-color: #ffff;
     height: 100%;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+    & .Section{
+        
 
+        & article {
+            margin:2rem 2.7vh 2rem 2.7vh;
+            margin-bottom: 2rem;
+            line-height: 1.6rem;
+        
+            & h2 {
+                font-size: 1.5rem;
+                text-align: center;
+                margin: 10% auto;
+                margin-bottom: 5%;
+        
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                color: hsl(210, 10%, 33%);
 
+            }
+            
+            & figcaption{
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
 
+            & p{
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+            }
 
-    
+        }
+    }
+
     & img {
         width: 50%;
         height: 50%;
