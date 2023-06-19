@@ -1,3 +1,5 @@
+@use '_h-breakpoints.scss' as BP;
+
 .Header {
     background-image: url(img/bg-header-mobile.png);
     background-size: cover;
@@ -61,5 +63,42 @@
     
         margin-bottom: 10%;
         margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: BP.$screen-1200) {
+    .Header {
+        background-image: url(img/bg-header-desktop.png);
+        & img {
+            width: 8%;
+            height: 8%;
+            margin: 8% 47% 0 47%;
+        }
+
+        & h1 {
+            font-size: 2.7rem;
+            margin: 5% auto;
+            margin-bottom: 0;
+        }
+
+        & p {
+            margin: 2% auto;
+            font-size: 1.2rem;
+            max-width: 45%;
+        }
+
+        & .buttons {
+            & button {
+                margin-top: 1.5rem;
+                font-size: 1rem;
+                margin-left: 1%;
+                height: 50px;
+                width: 13%;
+            }
+
+            & button:nth-child(1) {
+                margin-left: 35%;
+            }
+        }
     }
 }

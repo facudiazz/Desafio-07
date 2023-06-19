@@ -60,40 +60,150 @@
   background-color: hsl(233, 100%, 69%);
 }
 
+@media screen and (min-width: 1200px) {
+  .Header {
+    background-image: url(img/bg-header-desktop.png);
+  }
+  .Header img {
+    width: 8%;
+    height: 8%;
+    margin: 8% 47% 0 47%;
+  }
+  .Header h1 {
+    font-size: 2.7rem;
+    margin: 5% auto;
+    margin-bottom: 0;
+  }
+  .Header p {
+    margin: 2% auto;
+    font-size: 1.2rem;
+    max-width: 45%;
+  }
+  .Header .buttons button {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    margin-left: 1%;
+    height: 50px;
+    width: 13%;
+  }
+  .Header .buttons button:nth-child(1) {
+    margin-left: 35%;
+  }
+}
 .Main {
   display: flex;
   background-color: white;
   height: 100%;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.Main .Section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
 .Main .Section article {
-  margin: 2rem 2.7vh 2rem 2.7vh;
+  margin: 4rem 10%;
   margin-bottom: 2rem;
   line-height: 1.6rem;
 }
-.Main .Section article h2 {
+.Main .Section h2 {
   font-size: 1.5rem;
   text-align: center;
   margin: 10% auto;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
   color: hsl(210, 10%, 33%);
 }
-.Main .Section article figcaption {
+.Main .Section h3 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 6%;
 }
-.Main .Section article p {
+.Main .Section figure img {
+  width: 20%;
+  height: 20%;
+  margin: 5vh 0 4vh 0;
+}
+.Main .Section figure figcaption {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: hsl(210, 10%, 33%);
+  margin: 6% 0 8% 0;
+}
+.Main .Section p {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  color: hsl(201, 11%, 66%);
+  margin-bottom: 6%;
+}
+.Main article:nth-child(3) header {
+  margin: 20vw 0 20vw 0;
+}
+.Main article:nth-child(4) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Main article:nth-child(4) .picture1 {
+  margin-top: 15vw;
+}
+.Main article:nth-child(4) img {
+  margin: 8vw 0 8vw 0;
+}
+.Main article:nth-child(4) .imgibm {
+  width: 40%;
+  height: 42%;
+}
+.Main article:nth-child(4) .imgchica {
+  width: 40%;
+  height: 40%;
+}
+.Main article:last-child {
+  margin: 15vh 0 10vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+}
+.Main article:last-child p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(201, 11%, 66%);
+  margin: 1vh 0 5vh 0;
+}
+.Main article:last-child button {
+  width: 80%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10%;
+}
+.Main article:last-child button.button-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.Main article:last-child button.button-mac {
+  background-color: hsl(233, 100%, 69%);
 }
 .Main img {
   width: 50%;
@@ -131,6 +241,55 @@
 .Footer section.redes figure img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .Footer {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    margin-top: 30%;
+    background-color: #F5F6F8;
+    margin-bottom: 0;
+  }
+  .Footer picture {
+    display: inline-block;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+  .Footer img {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
+  .Footer ul {
+    max-width: 40%;
+    margin: 0 auto;
+    margin-right: 40%;
+    text-align: left;
+    list-style: none;
+    cursor: pointer;
+    column-count: 3;
+    gap: 0;
+  }
+  .Footer ul li {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5%;
+    color: hsl(201, 11%, 66%);
+  }
+  .Footer section.redes {
+    display: inline-block;
+    position: relative;
+    right: -50%;
+    top: -115px;
+  }
+  .Footer section.redes figure {
+    margin: 5% 1%;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
