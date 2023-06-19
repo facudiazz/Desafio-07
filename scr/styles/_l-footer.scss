@@ -1,0 +1,17 @@
+.Footer {
+    background-color: #F5F6F8;
+
+    & img {
+        width: 15%;
+        height: 15%;
+        margin: 10% 43%;
+    }
+
+    & ul {
+        text-align: center;
+
+        & li {
+            margin-bottom: 5%;
+        }
+    }
+}

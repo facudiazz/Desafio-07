@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.Header {
+  background-image: url(img/bg-header-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100vw;
+}
+.Header img {
+  width: 30%;
+  height: 30%;
+  margin: 25% 35% 0px 35%;
+}
+.Header h1 {
+  max-width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10% auto;
+  margin-bottom: 5%;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: hsl(210, 10%, 33%);
+}
+.Header p {
+  max-width: 80%;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(201, 11%, 66%);
+}
+.Header button {
+  width: 80%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+.Header button.button-ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.Header button.button-mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+main {
+  background-image: url(img/bg-header-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100vw;
+}
+main img {
+  width: 50%;
+  height: 50%;
+}
+
+.Footer {
+  background-color: #F5F6F8;
+}
+.Footer img {
+  width: 15%;
+  height: 15%;
+  margin: 10% 43%;
+}
+.Footer ul {
+  text-align: center;
+}
+.Footer ul li {
+  margin-bottom: 5%;
+}
+
+/*# sourceMappingURL=styles.css.map */
