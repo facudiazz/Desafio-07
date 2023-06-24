@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     height: 100%;
     width: 100vw;
-    margin-bottom: 15vh;
+    margin-bottom: 6vh;
 
     & img {
         width: 30%;
@@ -17,7 +17,7 @@
 
     & h1 {
         max-width: 80%;
-        font-size: 1.5rem;
+        font-size: 111rem;
         text-align: center;
         margin: 10% auto;
         margin-bottom: 5%;
@@ -69,6 +69,8 @@
 @media screen and (min-width: BP.$screen-1200) {
     .Header {
         background-image: url(img/bg-header-desktop.png);
+        margin-bottom: 0;
+
         & img {
             width: 8%;
             height: 8%;

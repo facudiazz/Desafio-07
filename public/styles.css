@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 100vw;
-  margin-bottom: 15vh;
+  margin-bottom: 6vh;
 }
 .Header img {
   width: 30%;
@@ -20,7 +20,7 @@
 }
 .Header h1 {
   max-width: 80%;
-  font-size: 1.5rem;
+  font-size: 111rem;
   text-align: center;
   margin: 10% auto;
   margin-bottom: 5%;
@@ -63,6 +63,7 @@
 @media screen and (min-width: 1200px) {
   .Header {
     background-image: url(img/bg-header-desktop.png);
+    margin-bottom: 0;
   }
   .Header img {
     width: 8%;
@@ -110,11 +111,41 @@
   height: 100%;
 }
 .Main .Section article {
-  margin: 4rem 10%;
+  margin: 3rem 10%;
   margin-bottom: 2rem;
   line-height: 1.6rem;
 }
-.Main .Section h2 {
+.Main .Section article main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(201, 11%, 66%);
+}
+.Main .Section article picture {
+  margin-top: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Main .Section article picture .computer {
+  width: 100%;
+  height: 100%;
+}
+.Main .Section article picture .imgdevices {
+  width: 110%;
+  height: 100%;
+}
+.Main .Section article h2 {
   font-size: 1.5rem;
   text-align: center;
   margin: 10% auto;
@@ -124,55 +155,21 @@
   font-size: 1.8rem;
   color: hsl(210, 10%, 33%);
 }
-.Main .Section h3 {
+.Main .Section article h3 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: hsl(210, 10%, 33%);
   margin-bottom: 6%;
 }
-.Main .Section figure img {
-  width: 20%;
-  height: 20%;
-  margin: 5vh 0 4vh 0;
-}
-.Main .Section figure figcaption {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: hsl(210, 10%, 33%);
-  margin: 6% 0 8% 0;
-}
-.Main .Section p {
+.Main .Section article p {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: hsl(201, 11%, 66%);
   margin-bottom: 6%;
 }
-.Main article:nth-child(3) header {
-  margin: 20vw 0 20vw 0;
-}
-.Main article:nth-child(4) {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.Main article:nth-child(4) .picture1 {
-  margin-top: 15vw;
-}
-.Main article:nth-child(4) img {
-  margin: 8vw 0 8vw 0;
-}
-.Main article:nth-child(4) .imgibm {
-  width: 40%;
-  height: 42%;
-}
-.Main article:nth-child(4) .imgchica {
-  width: 40%;
-  height: 40%;
-}
-.Main article:last-child {
+.Main .Section .descargas {
   margin: 15vh 0 10vw 0;
   display: flex;
   flex-direction: column;
@@ -180,14 +177,14 @@
   align-items: center;
   width: 96%;
 }
-.Main article:last-child p {
+.Main .Section .descargas p {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: hsl(201, 11%, 66%);
   margin: 1vh 0 5vh 0;
 }
-.Main article:last-child button {
+.Main .Section .descargas button {
   width: 80%;
   height: 60px;
   border-radius: 30px;
@@ -199,17 +196,227 @@
   cursor: pointer;
   margin-bottom: 10%;
 }
-.Main article:last-child button.button-ios {
+.Main .Section .descargas button.button-ios {
   background-color: hsl(171, 66%, 44%);
 }
-.Main article:last-child button.button-mac {
+.Main .Section .descargas button.button-mac {
   background-color: hsl(233, 100%, 69%);
 }
-.Main img {
-  width: 50%;
-  height: 50%;
+.Main .Supercharge header {
+  margin: 20vw 0 20vw 0;
+}
+.Main .Supercharge main figure .blacklists {
+  width: 20%;
+  height: 20%;
+  margin: 5vh 0 4vh 0;
+}
+.Main .Supercharge main figure .text {
+  width: 20%;
+  height: 20%;
+  margin: 5vh 0 4vh 0;
+}
+.Main .Supercharge main figure .preview {
+  width: 20%;
+  height: 20%;
+  margin: 5vh 0 4vh 0;
+}
+.Main .Supercharge main figure figcaption {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: hsl(210, 10%, 33%);
+  margin: 6% 0 8% 0;
+}
+.Main article:nth-child(4) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Main article:nth-child(4) .picture1 {
+  margin-top: 15vw;
+}
+.Main article:nth-child(4) .imgnormal {
+  width: 60%;
+  margin: 8vw 0 8vw 0;
+}
+.Main article:nth-child(4) .imgibm {
+  width: 40%;
+  height: 42%;
+}
+.Main article:nth-child(4) .imgchica {
+  width: 40%;
+  height: 40%;
 }
 
+@media screen and (min-width: 1200px) {
+  .Main .Section article {
+    margin: 3rem 5% 0 5%;
+  }
+  .Main .Section article picture .computer {
+    position: relative;
+    left: -50px;
+  }
+  .Main .Section article picture .imgdevices {
+    width: 100%;
+    height: 100%;
+    margin-top: 3vw;
+  }
+  .Main .Section .article1 {
+    margin: 0 0 5vw 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .Main .Section .article1 header {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  .Main .Section .article1 main {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    margin: 0px -12px 0px 0px;
+    padding: 0px;
+  }
+  .Main .Section .article1 main div {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+  }
+  .Main .Section .article1 main div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+  .Main .Section .article1 main div article h3 {
+    margin-bottom: 3%;
+  }
+  .Main .Section .article1 main div article p {
+    width: 25vw;
+  }
+  .Main .Section article:nth-child(4) {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 5rem;
+  }
+  .Main .Section article:nth-child(4) .picture1 {
+    margin-top: 6vh;
+  }
+  .Main .Section article:nth-child(4) .picture1 .imgnormal {
+    margin: 0;
+    width: 165px;
+    height: 49px;
+  }
+  .Main .Section article:nth-child(4) .microsoft .imgnormal {
+    margin: 0;
+    width: 161px;
+    height: 35px;
+  }
+  .Main .Section article:nth-child(4) .imgibm {
+    margin: 0;
+    width: 139px;
+    height: 51px;
+  }
+  .Main .Section article:nth-child(4) .enterprisse .imgchica {
+    margin: 0;
+    width: 135px;
+    height: 56px;
+  }
+  .Main .Section article:nth-child(4) .vector .imgchica {
+    width: 125px;
+    height: 30px;
+  }
+  .Main .Section .Supercharge {
+    margin: 0 0 15vh 0;
+    width: 76%;
+  }
+  .Main .Section .Supercharge header {
+    margin: 0;
+  }
+  .Main .Section .Supercharge main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Main .Section .Supercharge main div {
+    width: 60%;
+  }
+  .Main .Section .Supercharge main figure .blacklists {
+    width: 44px;
+    height: 40px;
+    margin: 5vh 0 4vh 0;
+  }
+  .Main .Section .Supercharge main figure .text {
+    width: 36px;
+    height: 32px;
+    margin: 5vh 0 4vh 0;
+  }
+  .Main .Section .Supercharge main figure .preview {
+    width: 50px;
+    height: 32px;
+    margin: 5vh 0 4vh 0;
+  }
+  .Main .article1 {
+    margin: 0 0 5vw 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .Main .article1 header {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  .Main .article1 main {
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    margin: 0px -12px 0px 0px;
+    padding: 0px;
+  }
+  .Main .article1 main .picture img {
+    position: relative;
+    left: -50px;
+  }
+  .Main .article1 main div {
+    display: flex;
+  }
+  .Main .article1 main div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+  .Main .Section .descargas {
+    width: 40%;
+  }
+  .Main .Section .descargas .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .Main .Section .descargas .buttons button {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    margin-left: 1%;
+    height: 50px;
+    width: 30%;
+  }
+}
 .Footer {
   margin-top: 30%;
   background-color: #F5F6F8;
@@ -248,7 +455,7 @@
     display: flex;
     flex-flow: wrap;
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 0;
     background-color: #F5F6F8;
     margin-bottom: 0;
   }
