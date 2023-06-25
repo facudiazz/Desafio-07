@@ -1,8 +1,10 @@
 @use '_h-breakpoints.scss' as BP;	
+@use '_h-colors.scss' as C;
+@use '_h-fonts.scss'  as F;
 
 .Footer {
     margin-top: 30%;
-    background-color: #F5F6F8;
+    background-color: C.$white;;
 
     & img {
         width: 15%;
@@ -16,10 +18,10 @@
         cursor: pointer;
 
         & li {
-            font-family: 'Bai Jamjuree', sans-serif;
-            font-weight: 600;
+            font-family: F.$font-bai;
+            font-weight: F.$font-weight600;
             margin-bottom: 5%;
-            color: hsl(210, 10%, 33%);
+            color: C.$dark-grayish-blue;
         }
     }
 
@@ -44,7 +46,7 @@
         flex-flow: wrap;
         flex-direction: column;
         margin-top: 0;
-        background-color: #F5F6F8;
+        background-color: C.$white;;
         margin-bottom: 0;
 
         & picture {
@@ -71,10 +73,10 @@
             gap: 0;
 
             & li {
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 600;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight600;;
                 margin-bottom: 5%;
-                color: hsl(201, 11%, 66%);
+                color: C.$grayish-blue;
             }
         }
 

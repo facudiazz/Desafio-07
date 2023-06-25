@@ -20,7 +20,6 @@
 }
 .Header h1 {
   max-width: 80%;
-  font-size: 111rem;
   text-align: center;
   margin: 10% auto;
   margin-bottom: 5%;
@@ -55,9 +54,11 @@
 }
 .Header button.button-ios {
   background-color: hsl(171, 66%, 44%);
+  box-shadow: -11px -24px 400px -8px #CFF4EA;
 }
 .Header button.button-mac {
   background-color: hsl(233, 100%, 69%);
+  box-shadow: -11px -24px 400px -8px #CFF4EA;
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,9 +199,11 @@
 }
 .Main .Section .descargas button.button-ios {
   background-color: hsl(171, 66%, 44%);
+  box-shadow: -11px -24px 400px -8px #CFF4EA;
 }
 .Main .Section .descargas button.button-mac {
   background-color: hsl(233, 100%, 69%);
+  box-shadow: -11px -24px 400px -8px #CFF4EA;
 }
 .Main .Supercharge header {
   margin: 20vw 0 20vw 0;

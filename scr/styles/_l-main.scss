@@ -1,4 +1,6 @@
 @use '_h-breakpoints.scss' as BP;
+@use '_h-colors.scss' as C;
+@use '_h-fonts.scss'  as F;
 
 .Main {
     display: flex;
@@ -36,10 +38,10 @@
                 margin-bottom: 2rem;
                 margin-top: 2rem;
                 text-align: center;
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 400;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight400;
                 font-size: 1rem;
-                color: hsl(201, 11%, 66%);
+                color: C.$grayish-blue;
 
               }
             }
@@ -69,26 +71,26 @@
                 margin: 10% auto;
                 margin-bottom: 6%;
         
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 600;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight600;;
                 font-size: 1.8rem;
-                color: hsl(210, 10%, 33%);
+                color: C.$dark-grayish-blue;
             }
             
             & h3{
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 600;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight600;;
                 font-size: 1.4rem;
-                color: hsl(210, 10%, 33%);
+                color: C.$dark-grayish-blue;
                 margin-bottom: 6%;
 
             }
 
             & p{
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 400;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight400;
                 font-size: 1rem;
-                color: hsl(201, 11%, 66%);
+                color: C.$grayish-blue;
                 margin-bottom: 6%;
             }
 
@@ -103,10 +105,10 @@
             width: 96%;
     
             & p{
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 400;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight400;
                 font-size: 1rem;
-                color: hsl(201, 11%, 66%);
+                color: C.$grayish-blue;
                 margin:1vh 0 5vh 0;
                 
             }
@@ -117,17 +119,19 @@
                 border-radius: 30px;
                 border: none;
                 color: white;
-                font-family: 'Bai Jamjuree', sans-serif;
-                font-weight: 600;
+                font-family: F.$font-bai;
+                font-weight: F.$font-weight600;;
                 font-size: 1.2rem;
                 cursor: pointer;
         
                 &.button-ios {
-                    background-color: hsl(171, 66%, 44%);
+                    background-color: C.$strong-cyan;
+                    box-shadow: -11px -24px 400px -8px #CFF4EA;
                 }
         
                 &.button-mac {
-                    background-color: hsl(233, 100%, 69%)
+                    background-color: C.$light-blue;
+                    box-shadow: -11px -24px 400px -8px #CFF4EA;
                 }
         
             
@@ -165,10 +169,10 @@
                     }
                 
                     & figcaption{
-                        font-family: 'Bai Jamjuree', sans-serif;
-                        font-weight: 600;
+                        font-family: F.$font-bai;
+                        font-weight: F.$font-weight600;;
                         font-size: 1.4rem;
-                        color: hsl(210, 10%, 33%);
+                        color: C.$dark-grayish-blue;
                         margin: 6% 0 8% 0;
                     }
                 }
